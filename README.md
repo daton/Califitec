@@ -1,4 +1,4 @@
 # Proyecto Califitec
 Proyecto para aplicaciones móviles
 
-![](.README_images/7a5c2276.png)
+![](.README_images/a8a5d9b5.png)
