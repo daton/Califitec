@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Alumno {
+    var id:String?=null
     var cuenta:String?=null
     var nombre:String?= null
     var materias:ArrayList<Materia>?=null
