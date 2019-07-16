@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity(), Validator.ValidationListener {
     private var login:TextInputEditText?=null
 
     @NotEmpty(message = "es necesario el password")
-    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC, message = "passwrdo no valido")
+    @Password(min = 6, scheme = Password.Scheme.ANY, message = "passwrdo no valido")
     private var password: TextInputEditText? = null
 
 
