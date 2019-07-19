@@ -1,6 +1,5 @@
 package org.unitec.califitec
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
@@ -8,7 +7,6 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
-import retrofit2.create
 
 class TareaAutenticarAlumno(var ctx: Context?, var activity: MainActivity?):
 AsyncTask<Void,Void,Void>(){
@@ -18,7 +16,7 @@ AsyncTask<Void,Void,Void>(){
     override fun onPreExecute() {
         super.onPreExecute()
         //Preparamos al alumno a partir de la info de la intefaz de usuario
-      alumno.email=  activity?.txtEmail?.text.toString()
+      alumno.email=  activity?.txtNuevoNombre?.text.toString()
       alumno.cuenta=activity?.txtPassword?.text.toString()
 
     }

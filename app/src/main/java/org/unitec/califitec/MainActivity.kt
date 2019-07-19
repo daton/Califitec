@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), Validator.ValidationListener {
 
         var validator = Validator(this);
         validator.setValidationListener(this);
-        login= txtEmail
+        login= txtNuevoNombre
         password=txtPassword
 
         button.setOnClickListener {
