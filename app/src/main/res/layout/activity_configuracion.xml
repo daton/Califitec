@@ -57,12 +57,16 @@
             android:textColor="@android:color/background_light"/>
     <Button
             android:text="Recordar datos"
+            android:textSize="14dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button3"
+       android:padding="5dp"
+
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="16dp"
             android:layout_marginBottom="62dp"
-            app:layout_constraintEnd_toEndOf="parent" android:background="@color/colorAccent" android:padding="5dp
-"
+            app:layout_constraintEnd_toEndOf="parent" android:background="@color/colorAccent"
+
+
             android:textColor="@android:color/background_light"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
