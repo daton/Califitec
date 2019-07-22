@@ -18,7 +18,7 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               />
+                android:id="@+id/txtActualizarEmail"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
@@ -31,7 +31,7 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
+                android:id="@+id/txtActualizarPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
@@ -44,13 +44,13 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="confirmar nuevo password"/>
+                android:hint="confirmar nuevo password" android:id="@+id/txtActualizarPasswordConfirmar"/>
     </com.google.android.material.textfield.TextInputLayout>
     <Button
             android:text="Cambiar datos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button2" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/cambiarDatos" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="16dp" android:layout_marginBottom="62dp"
             android:background="@color/colorPrimaryDark" android:padding="5dp"

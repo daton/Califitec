@@ -37,6 +37,13 @@ AsyncTask<Void,Void,Void>(){
     var envio=servicioAlumno.autenticar(alumno)
     alumno=envio.execute().body()!!
 
+    //Clase Java
+    Globales2.alumno2=Alumno()
+    Globales2.alumno2=alumno
+
+    //clase Kotlin
+    Globales.alumno=Alumno()
+    Globales.alumno=alumno
 
 return null
 

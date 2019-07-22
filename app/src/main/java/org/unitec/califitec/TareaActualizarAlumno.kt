@@ -3,11 +3,11 @@ package org.unitec.califitec
 import android.content.Context
 import android.os.AsyncTask
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_configuracion.*
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
 
-class TareaActualizarAlumno(var ctx: Context?, var activity: MainActivity?):
+class TareaActualizarAlumno(var ctx: Context?, var activity: ConfiguracionActivity?):
 AsyncTask<Void,Void,Void>(){
     var alumno=Alumno()
     var estatus =Estatus()
@@ -16,8 +16,10 @@ AsyncTask<Void,Void,Void>(){
     override fun onPreExecute() {
         super.onPreExecute()
         //Preparamos al alumno a partir de la info de la intefaz de usuario
-      alumno.email=  activity?.txtNuevoNombre?.text.toString()
-      alumno.cuenta=activity?.txtPassword?.text.toString()
+  //Formamos nuestro objeto usuario a partir de la vista (layout asociado)
+    alumno.email=    activity?.txtActualizarEmail?.text.toString()
+   //Aora asignamos el nuevo password
+    alumno.cuenta=activity?.txtActualizarPassword?.text.toString()
 
     }
 //Este es olbigatorio!! y aqui si es importante tener este metodo
