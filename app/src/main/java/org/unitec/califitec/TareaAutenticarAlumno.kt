@@ -57,6 +57,8 @@ return null
 
        if(alumno.autenticado!!){
            var i= Intent(ctx, ConfiguracionActivity::class.java)
+
+           Toast.makeText(ctx,"Autenticado "+alumno.toString(),Toast.LENGTH_LONG).show()
            activity?.startActivity(i)
        }
        else Toast.makeText(ctx, "Datos incorrectos", Toast.LENGTH_LONG).show()
