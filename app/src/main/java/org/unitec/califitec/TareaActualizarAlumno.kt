@@ -20,6 +20,10 @@ AsyncTask<Void,Void,Void>(){
     alumno.email=    activity?.txtActualizarEmail?.text.toString()
    //Aora asignamos el nuevo password
     alumno.cuenta=activity?.txtActualizarPassword?.text.toString()
+        //Con esto simplemente vamos a generar  el nuevo alumno con el mismo
+        //para que cuando llegue al back-end  no lo genere sino que lo sobrescriba
+        //es decir actualiza
+    alumno.id=Globales.alumno?.id
 
     }
 //Este es olbigatorio!! y aqui si es importante tener este metodo

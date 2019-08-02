@@ -36,6 +36,8 @@ class ConfiguracionActivity : AppCompatActivity() {
             Toast.makeText(
                 this, "Valores guardados", Toast.LENGTH_LONG
             ).show()
+
+
         }
     }
 }
