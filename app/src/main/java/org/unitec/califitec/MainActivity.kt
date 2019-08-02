@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity(), Validator.ValidationListener {
 
     override fun onValidationFailed(errors: MutableList<ValidationError>?) {
         //Aqui van las acciones  a tomar en caso de validaciones erroneas
+        //Malo
         var mensa = "men"
 
         for (error in errors!!) {
