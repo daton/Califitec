@@ -10,23 +10,40 @@ import kotlinx.android.synthetic.main.activity_navegacion.*
 
 class Navegacion : AppCompatActivity() {
 
-    private lateinit var textMessage: TextView
+   // private lateinit var textMessage: TextView
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                frame.removeAllViews()
-           var vistaLayout=     LayoutInflater.from(applicationContext).inflate(R.layout.primero,null,false)
-             frame.addView(vistaLayout)
+
+         frame.removeAllViews();
+     var vistaLayout=
+       LayoutInflater.from(applicationContext)
+     .inflate(R.layout.inicio,null,false)
+                frame.addView(vistaLayout)
 
 
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dashboard -> {
-                frame.removeAllViews()
+
+                frame.removeAllViews();
+                var vistaLayout=
+                    LayoutInflater.from(applicationContext)
+                        .inflate(R.layout.materias,null,false)
+                frame.addView(vistaLayout)
+
+
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
-                frame.removeAllViews()
+
+                frame.removeAllViews();
+                var vistaLayout=
+                    LayoutInflater.from(applicationContext)
+                        .inflate(R.layout.calificaciones,null,false)
+                frame.addView(vistaLayout)
+
+
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -38,7 +55,15 @@ class Navegacion : AppCompatActivity() {
         setContentView(R.layout.activity_navegacion)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
-//Aqui poner el primero
+//Aqui ponemos otra vez el primero porque el onCreate es el punto de entrada de la app
+        frame.removeAllViews();
+        var vistaLayout=
+            LayoutInflater.from(applicationContext)
+                .inflate(R.layout.inicio,null,false)
+        frame.addView(vistaLayout)
+
+
+
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
     }
 }
